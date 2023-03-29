@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            lightGrey: 'hsl(212, 45%, 89%)',
+            darkBlue: 'hsl(218, 44%, 22%)',
+            grayBlue: 'hsl(220, 15%, 55%)'
+            
+          },
+          fontFamily: {
+            'outfit': ['Outfit']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="h-screen bg-lightGrey">
+  <div class="h-full flex justify-center items-center">
+  <div class="bg-white flex flex-col justify-center p-2 rounded-2xl w-80 pb-8 pt-4 shadow-md gap-4">
+      <div class="w-full flex justify-center">
+      <img class="object-contain rounded-2xl h-[18rem]" src="./images/image-qr-code.png"/>
+      </div>
+      <div class="flex flex-col justify-center gap-4 m-3 text-center">
+        <h1 class="font-outfit font-bold text-[1.4rem] text-darkBlue leading-7">Improve your front-end skills by building projects</h1>
+        <p class="text-grayBlue font-[400] text-[1rem] mx-4 leading-5">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
